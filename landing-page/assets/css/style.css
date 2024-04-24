@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #1e262f;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #000;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+/************************************* Navbar **************************************/
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1e262f;
+    padding: 20px 0;
+    z-index: 9999;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar img {
+    height: 50px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    margin-right: 30px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #007bff;
+}
+
+
+
+
+/********************************** Home Section *********************************/
+
+.home {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 4.4rem;
+    padding: 12rem 0;
+    background-image: url('../../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home h1{
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.home p{
+    color: #FFF;
+}
+
+.btn-rounded{
+    position: relative;
+    padding: 0.9375rem 4.375rem 0.9375rem 1.2rem;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 0.1rem solid #24285b;
+    border-radius: 50px;
+    background-color: #ffffff;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: all 0.3s ease;
+}
+.btn-rounded:hover{
+    transform: scale(1.05); 
+    background: linear-gradient(to right, #24285b, #0e58a8);
+    color: #ffffff;
+
+}
+
+.btn-rounded span{
+    position: absolute;
+    background-color: #24285b;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    top: 50%;
+    right: 5px; 
+    transform: translateY(-50%);
+}
+
+.btn-rounded:hover span{
+    background-color: #1f2148;
+}
+
+.btn-rounded i{
+    color: #ffffff;
+    line-height: 2.5rem;
+}
+
+
+/********************************** About Section *********************************/
+
+.heading-line::before{
+    content: "";
+    width: 13rem;
+    height: 0.15rem;
+    display: block;
+    background-color: #24285b;
+    margin: 0 auto;
+}
+.heading-line::after{
+    content: "";
+    width: 2rem;
+    height: 0.3rem;
+    display: block;
+    background-color: #24285b;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    padding-top: 0.2rem;
+}
+
+.about p{
+    margin-top: 4rem;
+    color: #444444;
+}
+
+/******************************* Services Section *********************************/
+
+.services-info{
+    display: flex;
+    margin-top: 2rem;
+}
+
+.services-info h2{
+    flex: 0 0 50%;
+    max-width: 50%;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.border-right{
+    border-right: 0.1rem solid #ced4da;
+    height: 100%;
+}
+
+.services-info p{
+    font-size: 0.9rem;
+    text-align: left;
+    padding: 2rem;
+    color: #000;
+    font-weight: lighter;
+    margin-top: 0.5rem;
+}
+
+.services-container{
+    margin-top: 5rem;
+}
+
+.services-item{
+    display: flex;
+    margin-bottom: -5rem;
+}
+.services-item .services-img img{
+    max-width: 100%;
+    height: 70%;
+}
+
+.text-start{
+    text-align: left;
+}
+
+.text-end{
+    text-align: right;
+}
+
+.services-content{
+    margin-top: 5rem;
+}
+
+.services-content .icon{
+    font-size: 2rem;
+    color: #24285b;
+}
+
+.services-content h3{
+    font-size: 2rem;
+    background: linear-gradient(to right, #24285b, #0e58a8);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.services-content p{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+/********************************** Team Section *********************************/
+
+.team{
+    margin-top: -10rem;
+}
+.team-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.team-item{
+    margin-top: 2rem;
+}
+
+.team-item img{
+    max-width: 100%;
+    height: 300px;
+}
+
+.team-item h3{
+    font-size: 1.5rem;
+    color: #24285b;
+}
+
+.team-item p{
+    font-size: 1.2rem;
+    color: gray;
+}
+
+/********************************* Contact Section *********************************/
+
+.contact{
+    margin-top: -2rem;
+}
+.contact p{
+    font-size: 1.2rem;
+    margin-top: 3rem;
+    color: #444444;
+}
+
+.contact form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 2rem;
+    max-width: 600px;
+}
+
+.contact form input, textarea{
+    width: 100%;
+    font-size: 1rem;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #f2f2f2;
+}
+
+.contact form textarea{
+    resize: none;
+}
+
+.contact form button{
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    padding: 0;
+    background: #24285b;
+    color: #ffffff;
+    transition: all .2s;
+}
+
+.contact form button:hover{
+    background: #0e58a8;
+}
+
+/********************************** Footer Section *******************************/
+
+footer {
+    background-color: #0e58a8;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+    
+footer a{
+    text-decoration: none;
+    color: #24285b;
+    font-weight: 600;
+}
