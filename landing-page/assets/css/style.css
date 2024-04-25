@@ -45,7 +45,7 @@ section {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #1e262f;
+    background-color: #1f2148;
     padding: 20px 0;
     z-index: 9999;
 }
@@ -340,4 +340,38 @@ footer a{
     text-decoration: none;
     color: #24285b;
     font-weight: 600;
+}
+
+/********************************** Back to top button *******************************/
+
+.back-to-top{
+    position: fixed;
+    right: 1.875rem;
+    bottom: 1.875rem;
+    width: 3rem;
+    height: 3rem;
+    z-index: 9999;
+    border-radius: 50%;
+    background-color: #24285b;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.back-to-top i{
+    color: #fff;
+    font-size: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: moveUp 1s infinite alternate;
+}
+
+.back-to-top:hover{
+    background-color: #1f2148;
+}
+
+@keyframes moveUp {
+    to {
+        transform: translate(-50%, -70%); /* Adjust the percentage to move higher */
+    }
 }
