@@ -1,0 +1,22 @@
+.text-center {
+  text-align: center;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+.m-w-20 {
+  max-width: 30vw;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
